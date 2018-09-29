@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2B163C8215FE0C100C35AB9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B163C7215FE0C100C35AB9 /* Alert.swift */; };
 		B2B7A15B215F2FB1004FB283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7A15A215F2FB1004FB283 /* AppDelegate.swift */; };
-		B2B7A15D215F2FB1004FB283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7A15C215F2FB1004FB283 /* ViewController.swift */; };
 		B2B7A160215F2FB1004FB283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B7A15E215F2FB1004FB283 /* Main.storyboard */; };
 		B2B7A162215F2FB1004FB283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B7A161215F2FB1004FB283 /* Assets.xcassets */; };
 		B2B7A165215F2FB1004FB283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B7A163215F2FB1004FB283 /* LaunchScreen.storyboard */; };
+		B2B7A16D215F3272004FB283 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7A16C215F3272004FB283 /* MapScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2B163C7215FE0C100C35AB9 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B2B7A157215F2FB1004FB283 /* MapKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B7A15A215F2FB1004FB283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2B7A15C215F2FB1004FB283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2B7A15F215F2FB1004FB283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2B7A161215F2FB1004FB283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2B7A164215F2FB1004FB283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2B7A166215F2FB1004FB283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B7A16C215F3272004FB283 /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				B2B7A15A215F2FB1004FB283 /* AppDelegate.swift */,
-				B2B7A15C215F2FB1004FB283 /* ViewController.swift */,
+				B2B7A16C215F3272004FB283 /* MapScreenViewController.swift */,
+				B2B163C7215FE0C100C35AB9 /* Alert.swift */,
 				B2B7A15E215F2FB1004FB283 /* Main.storyboard */,
 				B2B7A161215F2FB1004FB283 /* Assets.xcassets */,
 				B2B7A163215F2FB1004FB283 /* LaunchScreen.storyboard */,
@@ -136,8 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2B7A15D215F2FB1004FB283 /* ViewController.swift in Sources */,
+				B2B163C8215FE0C100C35AB9 /* Alert.swift in Sources */,
 				B2B7A15B215F2FB1004FB283 /* AppDelegate.swift in Sources */,
+				B2B7A16D215F3272004FB283 /* MapScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +282,7 @@
 				DEVELOPMENT_TEAM = 6ZD8EJ8763;
 				INFOPLIST_FILE = MapKit_Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.MapKit-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.MapKit-Example1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,7 +297,7 @@
 				DEVELOPMENT_TEAM = 6ZD8EJ8763;
 				INFOPLIST_FILE = MapKit_Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.MapKit-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.MapKit-Example1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
