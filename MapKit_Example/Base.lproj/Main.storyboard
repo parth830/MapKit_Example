@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Map Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -19,22 +24,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RrD-y2-rtF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="xN3-Y4-Lee"/>
                                 </connections>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="jUo-d0-jh9">
+                                <rect key="frame" x="167.66666666666666" y="366" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="REu-zl-h59"/>
+                                    <constraint firstAttribute="height" constant="40" id="msn-90-Cr3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQd-MQ-S0B">
+                                <rect key="frame" x="0.0" y="728" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hdb-qc-r0M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RrD-y2-rtF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IWs-rq-4LE"/>
-                            <constraint firstAttribute="bottom" secondItem="RrD-y2-rtF" secondAttribute="bottom" id="gzx-Ie-ubn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RrD-y2-rtF" secondAttribute="bottom" id="MIc-o5-2oq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uQd-MQ-S0B" secondAttribute="trailing" id="NpX-XG-LHU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uQd-MQ-S0B" secondAttribute="bottom" id="TBc-KY-HVb"/>
+                            <constraint firstItem="uQd-MQ-S0B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XYt-6A-UKn"/>
+                            <constraint firstItem="jUo-d0-jh9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="geS-bx-ZHL"/>
                             <constraint firstItem="RrD-y2-rtF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iwy-N8-W71"/>
+                            <constraint firstItem="jUo-d0-jh9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="ly7-AS-67L"/>
                             <constraint firstItem="RrD-y2-rtF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mrR-wR-xpb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="uQd-MQ-S0B" id="R8w-Pz-UgW"/>
                         <outlet property="mapView" destination="RrD-y2-rtF" id="Hif-S8-MSW"/>
                     </connections>
                 </viewController>
@@ -43,4 +71,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.74384236453201"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pin" width="16" height="46"/>
+    </resources>
 </document>
